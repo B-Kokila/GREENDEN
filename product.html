@@ -15,7 +15,7 @@
     <nav class=" bg-green-100  items-center flex p-5 justify-between sticky top-0 shadow-black shadow-xl z-10">
 
         <h1 class="font-semibold text size-8 text-4xl">Greenden</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6 md:hidden ">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -27,6 +27,17 @@
             <li class="hover:underline text-black "><a href="contact.html">Contact Us </a></li>
         </ul>
     </nav>
+    <!-- sidenav -->
+     <!-- Side Nav -->
+     <div id="sidenav" class="bg-green-100 fixed top-0 z-20 transition-all duration-1000 text-right p-5 " style="width: 50%; height: 100vh;right: -50%;">
+        <p id="sideright" class=" inline cursor-pointer">X</p>
+        <ul class="flex flex-col  z-20 items-center gap-10 md:flex ">
+            <li class="hover:underline text-black"><a href="index.html">Home</a></li>
+            <li class="hover:underline text-black"><a href="product.html">Products</a>
+            </li>
+            <li class="hover:underline text-black "><a href="contact.html">Contact Us </a></li>
+        </ul>
+    </div>
     <section class="">
 
         <h2 class=" font-extrabold text-xl p-5 text-center mb-6 justify-center">Our Products</h2>
@@ -90,6 +101,7 @@
             ratione debitis alias laborum iure</p>
         <p class="pb-5 pl-2">@2024 Greenday.com</p>
     </section>
+    <script src="product.js"></script>
 </body>
 
 </html>
